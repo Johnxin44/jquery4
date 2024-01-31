@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The complete Couse of Jquery</title>
+  <style>
+
+  </style>  
+ <script src="./jquery.min.js"></script> 
+ <script>
+    //JQuery Effect
+    //First Effect...
+  $(document).ready(function(){
+  $('#divv1').click(function(){ 
+  $('img').hide() 
+  });  
+      //Second Effect...
+  $('#divv2').click(function(){ 
+  $('img').show() 
+  }); 
+        //Third Effect...
+  $('#divv3').click(function(){ 
+  $('img').toggle() 
+  }); 
+  });  
+ </script>
+ <style>
+ #divv1{ width: 105px; height:45px; background:green; color:white; line-height: 45px; text-align:center;}  
+ #divv2{ width: 105px; height:45px; background:green; color:white; line-height: 45px; text-align:center;}  
+ #divv3{ width: 160px; height:45px; background:green; color:white; line-height: 45px; text-align:center;}
+ img{width: 200px; height: 200px;} 
+ </style>
+</head>   
+<body>
+    <div id="divv1">click To Hide</div><br>
+    <div id="divv2">click To Show</div><br>
+    <div id="divv3">click To Hide & Show</div><br>
+    <img src="./img21-v2.jpg" alt="">
+</body>
+</html>
